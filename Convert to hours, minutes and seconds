@@ -1,0 +1,20 @@
+// Convert to hours, minutes and seconds by Sudipta Sarkar   date- 28/11/2020
+
+#include <stdio.h>
+int main() 
+
+  {
+    unsigned long long sec, h, m, s;
+	printf("Enter seconds =  ");
+	scanf("%llu", &sec);
+	
+	h = (sec/3600); 
+	
+	m = (sec -(3600*h))/60;
+	
+	s = (sec -(3600*h)-(m*60));
+	
+	printf("\t H:M:S - %llu:%llu:%llu\n",h,m,s);
+	
+	return 0;
+  }
